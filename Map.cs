@@ -29,8 +29,11 @@ public class Map{
             return mapa[x+1,y];
         }else if(mapa[x-1,y].GetType == Jewel){
             return mapa[x-1,y];
+        }if(mapa[x,y+1].GetType == Jewel){
+            return mapa[x,y+1];
+        }else if(mapa[x,y-1].GetType == Jewel){
+            return mapa[x,y-1];
         }
-        
         return null;
     }
 
