@@ -31,4 +31,9 @@ public class Map{
         }
         return false;
     }
+
+    public void updateRobo(Robot robo,int x_antigo,int y_antigo){
+        this.mapa[robo.x,robo.y] = robo;
+        this.mapa[x_antigo,y_antigo] = null;
+    }
 }

@@ -24,22 +24,32 @@ public class JewelCollector{
     
             Console.WriteLine("Enter the command: ");
             string command = Console.ReadLine();
-            bool coleta = false;    
+ i          nt x = robo.x;
+            int y = robo.y
+            bool coleta = false;
             if (command.Equals("quit")) {
                 running = false;
             } else if (command.Equals("w")) {
+                robot.andar(robot.x,robot.y-1);
                 
             } else if (command.Equals("a")) {
+                robot.andar(robot.x-1,robot.y);
                 
             } else if (command.Equals("s")) {
+                robot.andar.(robot.x,robot.y+1);
               
             } else if (command.Equals("d")) {
+                robot.andar(robot.x+1,robot.y);
             
             } else if (command.Equals("g")) {
                 coleta = true;
             }
-
-        } while (running);
-  }
+            if(coleta == true){
+                //map.updateJoia()
+            }else{
+                m.updateRobo(robo,x,y);
+            }
+            
+        }   
+    }
 }
-
