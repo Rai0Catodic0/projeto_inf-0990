@@ -17,7 +17,7 @@ public class JewelCollector{
         Console.WriteLine(robot.BagToString());
 
         bool running = true;
-  
+        Jewel joia;
         do {
             m.printMap();
             Console.WriteLine(robot.BagToString());
@@ -37,8 +37,10 @@ public class JewelCollector{
             
             } else if (command.Equals("g")) {
                 coleta = true;
+                joia = m.procura_joia(robot.x,robot.y);
+                robot.coletar(joia);
             }
-            Map.updateColeta();
+            Map.updateColeta(joia.x,joia.y);
         } while (running);
   }
 }

@@ -23,5 +23,20 @@ public class Map{
             Console.Write("\n");
         }
     }
+    public Jewel procura_joia(int x,int y){
+        Jewel achada;
+        if(mapa[x+1,y].GetType == Jewel){
+            return mapa[x+1,y];
+        }else if(mapa[x-1,y].GetType == Jewel){
+            return mapa[x-1,y];
+        }
+        
+        return null;
+    }
+
+    public void updateColeta(int x, int y){
+        this.mapa[x,y] = null;
+
+    }
 
 }
