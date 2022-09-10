@@ -24,7 +24,7 @@ public class JewelCollector{
     
             Console.WriteLine("Enter the command: ");
             string command = Console.ReadLine();
-    
+            bool coleta = false;    
             if (command.Equals("quit")) {
                 running = false;
             } else if (command.Equals("w")) {
@@ -36,8 +36,9 @@ public class JewelCollector{
             } else if (command.Equals("d")) {
             
             } else if (command.Equals("g")) {
-                
+                coleta = true;
             }
+            Map.updateColeta();
         } while (running);
   }
 }
