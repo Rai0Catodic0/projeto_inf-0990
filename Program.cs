@@ -30,16 +30,24 @@ public class JewelCollector{
             if (command.Equals("quit")) {
                 running = false;
             } else if (command.Equals("w")) {
-                robot.andar(robot.x,robot.y-1);
+                if(m.temObstaculo(robot.x,robot.y-1)){
+                    robot.andar(robot.x,robot.y-1);
+                }
                 
             } else if (command.Equals("a")) {
-                robot.andar(robot.x-1,robot.y);
+                if(m.temObstaculo(robot.x-1,robot.y)){
+                    robot.andar(robot.x-1,robot.y);
+                }
                 
             } else if (command.Equals("s")) {
-                robot.andar.(robot.x,robot.y+1);
+                if(m.temObstaculo(robot.x,robot.y+1)){
+                    robot.andar(robot.x,robot.y+1);
+                }
               
             } else if (command.Equals("d")) {
-                robot.andar(robot.x+1,robot.y);
+                if(m.temObstaculo(robot.x+1,robot.y)){
+                    robot.andar(robot.x+1,robot.y);
+                }
             
             } else if (command.Equals("g")) {
                 coleta = true;
