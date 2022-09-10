@@ -38,7 +38,7 @@ public class JewelCollector{
             } else if (command.Equals("g")) {
                 coleta = true;
             }
-            Map.updateColeta();
+
         } while (running);
   }
 }

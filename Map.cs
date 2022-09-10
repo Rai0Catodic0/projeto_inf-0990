@@ -23,5 +23,12 @@ public class Map{
             Console.Write("\n");
         }
     }
-
+    public bool temObstaculo(int x,int y){
+        Type tipo = this.mapa[x,y].GetType();
+        Type alvo = typeof(Obstacle);
+        if(tipo.Equals(alvo)){
+            return true;
+        }
+        return false;
+    }
 }

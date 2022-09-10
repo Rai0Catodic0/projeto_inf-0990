@@ -43,7 +43,6 @@ public class Robot : Elemento{
             v_joias += sacola[n_joias].pontos;
         
         }
-        
         return $"Bag total items:{n_joias} | Bag total value:{v_joias}";
     }
 }
