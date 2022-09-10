@@ -26,6 +26,7 @@ public class JewelCollector{
             string command = Console.ReadLine();
             bool coleta = false;    
             if (command.Equals("quit")) {
+                Console.WriteLine("Fim do Jogo por desistencia");
                 running = false;
             } else if (command.Equals("w")) {
                 
@@ -40,6 +41,7 @@ public class JewelCollector{
             }
 
         } while (running);
+        Console.WriteLine("Parabens! Voce Ganhou");
   }
 }
 
